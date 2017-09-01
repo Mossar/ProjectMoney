@@ -1,0 +1,36 @@
+@import 'style/variables.scss';
+
+.contact-us-container {
+  .contact-us-section {
+    width: 100%;
+    padding: 40px 0px;
+    color: white;
+    text-align: center;
+  }
+  .contact-us-text {
+    background: $primaryColor;
+    h3 {
+      font-weight: 700px;
+    }
+  }
+  .contact-us-mail {
+    background: $primaryHoverColor;
+    a {
+      transition: 0.5s all;
+      color: white;
+      font-size: 28px;
+      font-weight: 700;
+      text-decoration: none !important;
+      img {
+        transition: 0.5s all;
+        margin-right: 20px;
+      }
+      &:hover {
+        color: rgba(white, 0.5);
+        img {
+          transform: rotate3d(1, 0, 1, 60deg);
+        }
+      }
+    }
+  }
+}
