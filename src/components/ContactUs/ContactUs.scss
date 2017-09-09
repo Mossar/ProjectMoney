@@ -31,6 +31,12 @@
           transform: rotate3d(1, 0, 1, 60deg);
         }
       }
+      @media(max-width: $smSize) {
+        font-size: 20px;
+        img {
+          width: 50px;
+        }
+      }
     }
   }
 }

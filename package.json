@@ -24,10 +24,11 @@
     "mocha": "^2.4.5",
     "node-sass": "^4.5.3",
     "react-addons-test-utils": "^0.14.7",
+    "react-scroll-to-component": "^1.0.1",
     "sass-loader": "^6.0.6",
     "scss-loader": "0.0.1",
     "style-loader": "^0.18.2",
-    "webpack": "^1.12.9",
+    "webpack": "^3.0.0",
     "webpack-dev-server": "^1.14.0"
   },
   "dependencies": {

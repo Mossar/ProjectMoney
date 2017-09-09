@@ -1,7 +1,12 @@
+@import 'style/variables.scss';
+
 .websites-container {
   padding: 75px 0px;
   h2 {
     text-align: center;
     padding-bottom: 70px;
+    @media(max-width: $smSize) {
+      padding-bottom: 10px;
+    }
   }
 }

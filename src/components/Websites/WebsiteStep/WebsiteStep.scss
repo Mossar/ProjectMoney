@@ -1,12 +1,38 @@
+@import 'style/variables.scss';
+
 .website-step-container {
   width: 80%;
   margin: 0 auto;
+  padding: 0px 15px;
+  @media(max-width: $smSize) {
+    width: 100%;
+  }
   .website-step-text {
+    transition: 0.5s all;
+    opacity: 0;
     padding-top: 90px;
+    @media(max-width: $smSize) {
+      padding-top: 30px;
+      text-align: center;
+    }
   }
   .website-step-image {
     img {
+      transition: 0.5s all;
       height: 260px;
+      transform: scale(0.3) rotate(-30deg);
+      -webkit-transform: scale(0.3) rotate(-30deg);
+    }
+  }
+  &.displayed {
+    .website-step-text {
+      opacity: 1;
+    }
+    .website-step-image {
+      img {
+        transform: scale(1) rotate(0deg);
+        -webkit-transform: scale(1) rotate(0deg);
+      }
     }
   }
 }

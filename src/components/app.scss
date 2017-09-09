@@ -1,5 +1,12 @@
+@import 'style/variables.scss';
+
 html, body {
   font-family: 'Lato', sans-serif;
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 p {
@@ -9,6 +16,9 @@ p {
 h2 {
   font-size: 28px;
   font-weight: 700;
+  @media(max-width: $xsSize) {
+    font-size: 24px;
+  }
 }
 
 h3 {
