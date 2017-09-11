@@ -11,10 +11,10 @@ export default class AppHeader extends Component {
           <div className="container">
             <img className="app-logo" src="/assets/img/feststrona.png" alt="feststrona" />
             <ul className="list-inline main-menu">
-              <li onClick={() => scrollToComponent(this.props.sections.websites, { align: 'top' })}>STRONY INTERNETOWE</li>
-              <li onClick={() => scrollToComponent(this.props.sections.graphics, { align: 'top' })}>GRAFIKI</li>
-              <li onClick={() => scrollToComponent(this.props.sections.contactUs, { align: 'top', offset: -50 })}>KONTAKT</li>
-              <li onClick={() => scrollToComponent(this.props.sections.aboutUs, { align: 'top' })}>O NAS</li>
+              <li onClick={() => scrollToComponent(this.props.sections.websites, { align: 'top' })}>Strony internetowe</li>
+              <li onClick={() => scrollToComponent(this.props.sections.graphics, { align: 'top' })}>Grafiki</li>
+              <li onClick={() => scrollToComponent(this.props.sections.contactUs, { align: 'top', offset: -50 })}>Kontakt</li>
+              <li onClick={() => scrollToComponent(this.props.sections.aboutUs, { align: 'top' })}>O nas</li>
             </ul>
           </div>
         </div>
