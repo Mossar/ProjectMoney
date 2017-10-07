@@ -18,17 +18,34 @@
     }
     .person-container {
       text-align: center;
+      perspective: 300px;
       h3 {
         margin: 25px 0px 5px 0px;
       }
       p {
         font-size: 18px;
       }
-      img {
-        width: 180px;
-        @media(max-width: $smSize) {
-          width: 100px;
+      .person-photo {
+        position: relative;
+        transition: 0.5s all;
+        transform-style: preserve-3d;
+        margin: 0 auto;
+        width: 200px;
+        height: 200px;
+        .front, .back {
+          position: absolute;
+          top: 0; left: 0;
+          backface-visibility: hidden;
+          -webkit-backface-visibility: hidden;
+          width: 100%; height: 100%;
         }
+        .back {
+          transform: rotateY(180deg);
+        }
+      }
+      &:hover .person-photo {
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
       }
     }
   }
