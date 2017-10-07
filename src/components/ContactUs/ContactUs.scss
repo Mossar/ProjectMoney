@@ -12,18 +12,17 @@
     h3 {
       font-weight: 700px;
     }
-  }
-  .contact-us-mail {
-    background: $primaryHoverColor;
-    a {
+    .mail-link {
+      margin-top: 15px;
       transition: 0.5s all;
       color: white;
-      font-size: 28px;
+      font-size: 22px;
       font-weight: 700;
       text-decoration: none !important;
       img {
         transition: 0.5s all;
         margin-right: 20px;
+        width: 50px;
       }
       &:hover {
         color: rgba(white, 0.5);
@@ -37,6 +36,23 @@
           width: 50px;
         }
       }
+    }
+  }
+  .contact-us-mail {
+    background: $primaryHoverColor;
+    .contact-form {
+      margin: 0 auto;
+      max-width: 600px;
+      .form-control {
+        margin-bottom: 10px;
+        font-weight: 700;
+      }
+      textarea {
+        height: 150px;
+      }
+    }
+    .mail-message {
+      margin-top: 15px;
     }
   }
 }

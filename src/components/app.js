@@ -6,6 +6,7 @@ import Graphics from './Graphics/Graphics';
 import AboutUs from './AboutUs/AboutUs';
 import AppFooter from './AppFooter/AppFooter';
 
+import '../../style/forms.scss';
 import './app.scss';
 
 export default class App extends Component {

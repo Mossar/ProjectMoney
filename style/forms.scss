@@ -1,0 +1,29 @@
+@import './variables.scss';
+
+.btn {
+  transition: 0.3s all;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 10px 40px;
+  &.btn-primary {
+    background: transparent;
+    border: 1px solid white;
+    &:hover, &:focus, &:active {
+      border: 1px solid white;
+      background: white;
+      color: $primaryColor;
+      box-shadow: none;
+      outline: none;
+    }
+  }
+}
+
+.form-control {
+  border: 0 !important;
+  padding: 10px 15px;
+  &:hover, &:active, &:focus {
+    outline: none;
+
+  }
+}
